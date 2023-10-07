@@ -46,3 +46,34 @@ body{
     text-align: center;
     margin-top: 5px;
 }
+
+/**LOGIN ADMIN**/
+
+.login_container{
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+
+.login_container > h2 {
+    text-align: center;
+}
+
+.login_container > p{
+    margin-bottom:0; 
+    margin-top:10px;
+}
+
+.login_container > .input ,
+.login_container > .txtEmailLogin {
+    width: 100%;
+}
+
+
+.login_container > .button{
+    margin-top: 15px ;
+}
