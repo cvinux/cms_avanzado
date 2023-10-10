@@ -1,6 +1,6 @@
 <?php
 
-    require "Functions.php";
-    $user = new User_Actions();
+   require "Functions.php";
+   $user = new User_Actions();
 
 ?>

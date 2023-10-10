@@ -13,17 +13,22 @@
 
     <?php 
         if(isset($_SESSION['admin'])){
-            require "../views/nav/main_nav.php"; 
+            require "../views/nav/main_admin_nav.php"; 
         }
     ?>
 
     <?php 
         if(!isset($_SESSION['admin'])){
             require '../views/admin/home.php';
+        }else if (
+            isset($_SESSION['admin']) && !isset($_GET['section'])
+        ){
+            require '../views/admin/main.php';
         }
     ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="res/css/framework/semantic/semantic.min.js"></script>
+<script src="../res/css/framework/semantic/semantic.min.js"></script>
+<script src="../res/js/admin.js"></script>
 </body>
 </html>
