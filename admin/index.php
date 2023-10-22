@@ -24,10 +24,15 @@
             isset($_SESSION['admin']) && !isset($_GET['section'])
         ){
             require '../views/admin/main.php';
+        }else if (
+            isset($_SESSION['admin']) && isset($_GET['section']) && $_GET['section']=="posts"
+        ){
+            require '../views/admin/posts.php';
         }
     ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
 <script src="../res/css/framework/semantic/semantic.min.js"></script>
 <script src="../res/js/admin.js"></script>
 </body>

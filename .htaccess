@@ -2,3 +2,6 @@ Options +FollowSymLinks
 RewriteEngine on
 
 RewriteRule ^log-out$ res/php/users_actions/log-out.php [QSA]
+
+#Rutas administradores
+RewriteRule ^admin/posts$ admin/index.php?section=posts [QSA]

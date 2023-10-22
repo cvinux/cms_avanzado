@@ -59,6 +59,29 @@ body{
 }
 
 
+
+.new_post_container{
+    width: 60%;
+    margin: 30px auto;
+    background-color: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.new_post_container .input{
+    width: 100%;
+}
+
+.new_post_container button{
+    margin-top: 15px !important;
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
 .login_container > h2 {
     text-align: center;
 }
@@ -77,3 +100,8 @@ body{
 .login_container > .button{
     margin-top: 15px ;
 }
+
+
+
+
+
